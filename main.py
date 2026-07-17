@@ -386,6 +386,3 @@ async def analyze_image(file: UploadFile = File(...)):
             detail=f"Terjadi kesalahan saat analisis: {str(e)}"
         )
         
-@app.get("/ping")
-def ping():
-    return {"status": "ok"}
