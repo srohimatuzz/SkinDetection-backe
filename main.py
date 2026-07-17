@@ -372,3 +372,7 @@ async def analyze_image(file: UploadFile = File(...)):
             status_code=500,
             detail=f"Terjadi kesalahan saat analisis: {str(e)}"
         )
+        
+@app.get("/ping")
+def ping():
+    return {"status": "ok"}
