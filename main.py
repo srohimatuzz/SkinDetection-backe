@@ -259,6 +259,7 @@ def root():
         "model"          : "loaded" if model else "failed",
         "gap_extractor"  : "ready" if gap_extractor else "unavailable",
         "embedding_ref"  : "loaded" if embedding_ref else "unavailable",
+        "message"        :"INI ROOT BARU 18 JULI",
     }
 
 
