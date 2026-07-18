@@ -386,3 +386,9 @@ async def analyze_image(file: UploadFile = File(...)):
             detail=f"Terjadi kesalahan saat analisis: {str(e)}"
         )
         
+@app.get("/debug")  
+def debug():
+    return {
+        "message": "INI MAIN.PY VERSI 18 JULI",
+        "allow_credentials": False
+    }   
